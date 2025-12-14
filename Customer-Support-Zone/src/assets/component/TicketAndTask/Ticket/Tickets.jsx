@@ -1,8 +1,8 @@
 import { use, useEffect } from "react";
 import Ticket from "./Ticket";
-export default function Tickets({fetchPromise, removeTicket,clickTicket,setClickTicket,setTickets,tickets }){
+export default function Tickets({fetchPromise, removeTicket,clickTicket,setClickTicket,tickets,setTickets }){
    const ticketsData=use(fetchPromise)
-useEffect(() =>{
+useEffect(()=>{
     setTickets(ticketsData)
 },[])
     return(
