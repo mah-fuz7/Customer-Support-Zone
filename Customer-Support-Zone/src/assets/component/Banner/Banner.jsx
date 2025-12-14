@@ -1,6 +1,6 @@
 import React from 'react';
 import bgimg1 from '../../../../public/img/vector1.png'
-const Banner = () => {
+const Banner = ({clickTicket ,taskSlove}) => {
     return (
         <div  className='flex justify-between max-w-[1200px] mx-auto my-10'>
 
@@ -20,7 +20,7 @@ const Banner = () => {
 >
  <div className='mt-[10%]'>
      <h2 className="text-lg font-medium items-center">In-Progress</h2>
-  <p className="text-4xl font-bold mt-">0</p>
+  <p className="text-4xl font-bold mt-">{clickTicket.length}</p>
  </div>
 </div>
 
@@ -41,7 +41,7 @@ const Banner = () => {
 >
  <div className='mt-[10%]'>
      <h2 className="text-lg font-medium items-center">Resolved</h2>
-  <p className="text-4xl font-bold mt-">0</p>
+  <p className="text-4xl font-bold mt-">{taskSlove.length}</p>
  </div>
 </div>
            

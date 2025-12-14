@@ -1,9 +1,11 @@
+import { toast } from "react-toastify"
+
 export default function Ticket({tickets ,removeTicket,clickTicket,setClickTicket}){
     const {id, title,description,customer,priority,status,createdAt}=tickets
     const handleClick=()=>{
       removeTicket(tickets)
       setClickTicket([...clickTicket ,tickets])
-     
+     toast('Ticket is on Progress')
     }
     return(
         <div onClick={()=>handleClick()}>
