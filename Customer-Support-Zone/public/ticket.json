@@ -1,0 +1,137 @@
+[
+  {
+    "id": "CSZ-0015",
+    "title": "Login page constantly redirects to error 404.",
+    "description": "Customer is unable to log in. After entering credentials, the system redirects immediately to a 404 Not Found page, instead of the user dashboard. This has been happening since the last update (Dec 10). Tried clearing cache and cookies with no success. This is a critical workflow block.",
+    "customer": "Alice Johnson",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2025-12-10"
+  },
+  {
+    "id": "CSZ-0014",
+    "title": "Invoice for November is incorrect, wrong item quantity.",
+    "description": "The invoice for the billing cycle ending November 30th shows 5 licenses used, but the customer states they only had 3 active licenses for the entire month. Requires finance team review and a credit/re-issuance of the correct invoice.",
+    "customer": "Bob Williams",
+    "priority": "Medium",
+    "status": "Resolved",
+    "createdAt": "2025-12-09"
+  },
+  {
+    "id": "CSZ-0013",
+    "title": "Feature request: Dark mode for the user dashboard.",
+    "description": "Submitting a request for a dark mode option on the main user dashboard and settings pages to reduce eye strain during late-night use. Customer suggests a toggle switch in the profile menu.",
+    "customer": "Charlie Brown",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2025-12-12"
+  },
+  {
+    "id": "CSZ-0012",
+    "title": "Payment failed repeatedly with error code 500.",
+    "description": "Multiple attempts to process a subscription renewal payment have resulted in a generic Server Error 500. Customer has verified card details and funds are available. Requires technical investigation into the payment gateway communication logs.",
+    "customer": "Diana Prince",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2025-12-10"
+  },
+  {
+    "id": "CSZ-0011",
+    "title": "Need to update contact email address on file.",
+    "description": "The customer needs to change their primary contact email from 'old.email@example.com' to 'new.email@company.com'. They tried the self-service portal, but the option is grayed out. Requires manual update by a support agent with appropriate permissions.",
+    "customer": "Ethan Hunt",
+    "priority": "Low",
+    "status": "Resolved",
+    "createdAt": "2025-12-08"
+  },
+  {
+    "id": "CSZ-0010",
+    "title": "Missing documentation for API endpoint /v2/users.",
+    "description": "The customer is trying to integrate with the V2 Users API, but the corresponding page in the developer documentation returns a 'page not found' error. They need the schema and required headers to proceed with their development work.",
+    "customer": "Fiona Glenanne",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2025-12-12"
+  },
+  {
+    "id": "CSZ-0009",
+    "title": "Mobile app crashes when uploading a profile picture.",
+    "description": "On both iOS (version 17.1) and Android (version 14), the mobile app crashes immediately after selecting an image from the gallery and hitting 'Upload'. Device logs show an unhandled exception in the image processing module.",
+    "customer": "George Kirk",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2025-12-09"
+  },
+  {
+    "id": "CSZ-0008",
+    "title": "Request for a temporary account suspension.",
+    "description": "Customer will be traveling for three months and requests a temporary pause/suspension of their paid subscription to avoid unnecessary charges. They need the account to be reactivated on March 15th of next year.",
+    "customer": "Helen Parr",
+    "priority": "Low",
+    "status": "Resolved",
+    "createdAt": "2025-12-07"
+  },
+  {
+    "id": "CSZ-0007",
+    "title": "System is slow and times out during report generation.",
+    "description": "Reports that typically take 30 seconds to generate are now taking over 5 minutes and often fail with a 'Request Timeout' error. This impacts critical end-of-day operations. Occurs mainly with reports covering more than 90 days of data.",
+    "customer": "Ivan Drago",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2025-12-11"
+  },
+  {
+    "id": "CSZ-0006",
+    "title": "How to change the default language setting?",
+    "description": "The customer's interface defaulted to Spanish, but they require English. They cannot locate the language setting option in the 'Account Settings' menu. Needs guidance or a direct link to the correct configuration page.",
+    "customer": "Jane Foster",
+    "priority": "Low",
+    "status": "Resolved",
+    "createdAt": "2025-12-08"
+  },
+  {
+    "id": "CSZ-0005",
+    "title": "Lost my multi-factor authentication device, need reset.",
+    "description": "The user has lost their phone, which was the MFA device. They are locked out of their account and require an immediate MFA reset and temporary bypass code to regain access. Security verification confirmed before processing reset.",
+    "customer": "Kyle Reese",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2025-12-10"
+  },
+  {
+    "id": "CSZ-0004",
+    "title": "Typo found on the 'About Us' page.",
+    "description": "Found a spelling error in the third paragraph of the 'Our Mission' section on the public-facing 'About Us' page. The word 'committment' should be 'commitment'. Minor, but needs fixing for professional presentation.",
+    "customer": "Lois Lane",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2025-12-12"
+  },
+  {
+    "id": "CSZ-0003",
+    "title": "Refund not processed after 7 business days.",
+    "description": "Customer canceled their order (ID: R-45678) on Dec 1st and was promised a refund within 5-7 business days. It is now 8 business days, and the refund has not appeared in their bank statement. Needs tracing of the refund transaction.",
+    "customer": "Marty McFly",
+    "priority": "Medium",
+    "status": "In Progress",
+    "createdAt": "2025-12-05"
+  },
+  {
+    "id": "CSZ-0002",
+    "title": "Need assistance integrating with third-party tool.",
+    "description": "Customer is trying to set up a webhook integration with 'ZapConnect' but is encountering issues with the authentication token. They require a one-on-one session with a technical specialist to troubleshoot the setup.",
+    "customer": "Natasha Romanoff",
+    "priority": "Medium",
+    "status": "Resolved",
+    "createdAt": "2025-12-06"
+  },
+  {
+    "id": "CSZ-0001",
+    "title": "User profile picture does not load intermittently.",
+    "description": "Approximately 4 out of 10 page loads, the user's profile picture fails to load, showing a broken image icon instead. This issue is inconsistent across different browsers (Chrome and Firefox) but seems persistent on their machine.",
+    "customer": "Owen Grady",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-12-12"
+  }
+]
