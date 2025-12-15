@@ -1,5 +1,4 @@
 import { toast } from "react-toastify"
-
 export default function Ticket({tickets ,removeTicket,clickTicket,setClickTicket}){
     const {id, title,description,customer,priority,status,createdAt}=tickets
     const handleClick=()=>{
@@ -17,7 +16,9 @@ export default function Ticket({tickets ,removeTicket,clickTicket,setClickTicket
           {title}
         </h3>
 
-        <span className={`flex items-center whitespace-nowrap px-2 py-1 rounded-full text-xs font-medium `}>
+        <span className={`flex items-center whitespace-nowrap px-2 py-1 rounded-full text-xs font-medium ${
+          status==="Open"?'bg-green-400':'bg-amber-400'
+        } `}>
           <span className="h-2 w-2 rounded-full bg-green-500 mr-1"></span>
           {status}
         </span>
@@ -30,7 +31,19 @@ export default function Ticket({tickets ,removeTicket,clickTicket,setClickTicket
         
         <div className="flex items-center space-x-2">
           <span className="text-gray-400">{id}</span>
-          <span className={`font-bold  tracking-wider`}>
+          <span 
+  className={`
+    font-bold 
+    tracking-wider 
+    ${
+      priority === "High" 
+        ? 'text-red-600'
+        : priority === "Medium"
+          ? 'text-amber-600'
+          : 'text-green-700' 
+    }
+  `}
+>
            { priority}
           </span>
         </div>

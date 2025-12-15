@@ -6,6 +6,7 @@ import Tasks from './assets/component/TicketAndTask/Task/Tasks';
 import Resolved from './assets/component/Resolved/Resolved';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
+import Footer from './assets/component/footer/footer';
  const fetchPromise=fetch('/ticket.json')
   .then(res=>res.json())
 const App = () => {
@@ -55,6 +56,7 @@ setTaskSlove([...taskSlove,ts])
 
 </div>
 </div>
+<Footer></Footer>
  <ToastContainer />
     </div>
   );
